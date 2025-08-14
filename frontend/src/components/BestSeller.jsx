@@ -12,7 +12,7 @@ const BestSeller = () => {
          //console.log("Products from context:", products); 
         const bestProduct =products.filter((item)=>(item.bestseller));
         setBestSeller(bestProduct.slice(0,5));
-    },[])
+    },[products])
 
   return (
     <div className='my-10'>
